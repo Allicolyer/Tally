@@ -25,19 +25,15 @@
 			        	}
 			        	var joined = (ageData.join("+"))
 			        	var totalage = eval(joined)
-			        	console.log(joined)
-			        	console.log(totalage)
 			        	var divide = eval(totalage/5)
-			        	console.log(divide)
 			        	var fives = Math.floor(divide)
-			        	console.log(fives)
-			        	for (var i=0; i<=fives; i++) {
-			        	$("#tally").append("<img src = 'Tally5.png' />");
-			        	}
 			        	var leftover = totalage % 5
-			        	console.log(leftover)
 
-			        		for (var i=0; i<leftover; i++) {
+			        	for (var i=0; i<=fives; i++) {
+			        		$("#tally").append("<img src = 'Tally5.png' />");
+			        	}
+			  
+			        	for (var i=0; i<=leftover; i++) {
 			        		$("#tally").append("<img src = 'Tally1.png' />");
 			        	}
 
@@ -57,7 +53,7 @@
 
 			color: #383838;
 			font-family: 'Gill Sans',' Gill Sans MT', Calibri, sans-serif;
-			size: 16px
+			size: 18px
 		}
 
 		#tally {
